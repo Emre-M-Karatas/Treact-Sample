@@ -553,8 +553,6 @@ PRICING
 
 */
 
-
-
 .pricing__container {
   padding: 96px 0;
 }
@@ -564,13 +562,12 @@ PRICING
   align-items: center;
 }
 
-
 .plans {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .plan {
@@ -761,12 +758,12 @@ TESTIMONIALS
 }
 
 #testimonials .row {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1280px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .testimonials__img {
@@ -786,7 +783,7 @@ TESTIMONIALS
 .testimonial__rating {
   margin-top: 4px;
   margin-right: 2px;
-  color: rgb(246 173 85)
+  color: rgb(246 173 85);
 }
 
 .testimonails__title {
@@ -848,5 +845,86 @@ TESTIMONIALS
 }
 
 .testimonials__button:hover {
-    background-color: rgb(229, 231, 235);
+  background-color: rgb(229, 231, 235);
+}
+
+/* 
+
+START 
+
+*/
+
+#start .row {
+  position: relative;
+  overflow: hidden;
+}
+
+.start__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(100, 21, 255);
+  width: 100%;
+  max-width: 1280;
+  height: 300px;
+  padding: 140px 0;
+  height: 190px;
+  border-radius: 8px;
+}
+
+.start__row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start__title {
+  font-size: 30px;
+  color: #f7fafc;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: 50%;
+}
+
+.start__buttons {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start__btn {
+  color: #f7fafc;
+  padding: 20px 40px;
+  margin: 1px;
+  line-height: 1.5;
+  border-radius: 500px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.start__btn:nth-child(1) {
+  background-color: #f56565;
+  margin-right: 32px;
+  transition: all 300ms ease;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.start__btn:hover:nth-child(1) {
+  background-color: rgba(229, 62, 62);
+}
+
+.start__btn:nth-child(2) {
+  border: 1px solid rgb(160, 174, 192);
+  transition: all 300ms ease;
+  background-color: #6415ff;
+}
+
+.start__btn:hover:nth-child(2) {
+  background-color: rgba(247, 250, 252);
+  color: rgba(100, 21, 255);
 }
