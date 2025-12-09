@@ -131,6 +131,12 @@ NAVIGATION
   background-color: rgba(80, 17, 204);
 }
 
+/* 
+
+BURGER MENU
+
+*/
+
 .btn__menu {
   background: transparent;
   font-size: 24px;
@@ -141,23 +147,28 @@ NAVIGATION
 }
 
 .menu__backdrop {
-  position: absolute;
-  background-color: #fff;
+  position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
+  width: 95%;
   height: 378px;
+  background: #fff;
+  padding: 32px;
+  border: 1px solid rgb(229, 231, 235);
+  z-index: 200;
+  border-radius: 8px;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
   margin: 24px 16px;
   padding: 32px;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  border: 1px solid rgb(229, 231, 235);
-  transition: all 300ms ease;
-  display: none;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.menu__backdrop.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .menu--open .menu__backdrop {
@@ -174,9 +185,9 @@ NAVIGATION
 }
 
 .menu--open .menu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .menu__links {

@@ -1,7 +1,7 @@
 function openMenu() {
-    document.body.classList += " menu--open";
+  document.querySelector(".menu__backdrop").classList.add("open");
 }
 
 function closeMenu() {
-    document.body.classList.remove('menu--open');
+  document.querySelector(".menu__backdrop").classList.remove("open");
 }
