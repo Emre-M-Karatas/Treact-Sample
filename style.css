@@ -212,6 +212,11 @@ BURGER MENU
   background: #6415ff;
   border-radius: 500px;
   border: none;
+  transition: all 350ms ease;
+}
+
+.menu__link--primary:hover {
+  background-color: rgba(80, 17, 204);
 }
 
 /* 
