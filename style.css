@@ -239,6 +239,12 @@ BURGER MENU
   }
 }
 
+@media (max-width: 768px) {
+  .btn__menu {
+    display: block;
+  }
+}
+
 /* 
 
 HEADER
@@ -1201,11 +1207,7 @@ SMALL PHONES & PHONES
   }
 }
 
-@media (max-width: 768px) {
-  .btn__menu {
-    display: block;
-  }
-}
+
 
 /*HEADER*/
 @media (max-width: 768px) {
