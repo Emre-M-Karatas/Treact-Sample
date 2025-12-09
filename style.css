@@ -243,6 +243,14 @@ BURGER MENU
   .btn__menu {
     display: block;
   }
+
+  .fa-solid.fa-bars {
+    display: block;
+  }
+
+  .fa-bars {
+    display: block;
+  }
 }
 
 /* 
