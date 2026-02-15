@@ -1190,6 +1190,24 @@ SMALL PHONES & PHONES
   }
 }
 
+@media (max-width: 414px) {
+  .header__email, 
+  .header__email--input,
+  .header__email--btn 
+  {
+    flex-direction: column;
+    position:static;
+    width: 100%;
+    margin-bottom: 45px;
+    height: 56px;
+  }
+
+   .header__email--input,.header__email--btn {
+    font-size: 15px;
+   } 
+  
+}
+
 @media (max-width: 600px) {
   section {
     padding: 0 16px;
